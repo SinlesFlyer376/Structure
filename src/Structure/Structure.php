@@ -13,6 +13,7 @@ class Structure extends PluginBase{
         if (isset($args[0])) {
             switch (strtolower($args[0])) {
                 case "deserttemple":
+                case "dt":
                     $desertTemple = new DesertTemple($sender->getPosition());
                     $sender->sendMessage("Generated desert temple in: ".$desertTemple->generate()."s.");
                     break;
